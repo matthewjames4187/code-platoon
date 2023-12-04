@@ -16,4 +16,4 @@ jobs:
       - name: Print contents of message.txt
         run: cat message.txt
       - name: Print custom message using echo
-        run: echo 'And that's all folks!'
+        run: echo "And that's all folks!"
