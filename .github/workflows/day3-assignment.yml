@@ -1,0 +1,19 @@
+---
+name: Day 3 Assignment Workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create message.txt
+        run: echo 'This is my message' > message.txt
+      - name: Print current working directory
+        run: |
+          pwd
+      - name: Print contents of message.txt
+        run: cat message.txt
+      - name: Print custom message using echo
+        run: echo 'And that's all folks!'
